@@ -25,8 +25,7 @@ Open **Settings → Note Shortcut Button**. Each row is one button:
 Changes show up in the left panel right away. Clicking a button opens its note, or switches to
 its tab if the note is already open.
 
-On first install, if your vault has a note with "TODO" in its name, a shortcut to it is added
-for you.
+On first install, if your vault has a note named "TODO", a shortcut to it is added for you.
 
 ## Good to know
 
@@ -36,6 +35,9 @@ for you.
 - **Keyboard shortcuts win over Obsidian's own hotkeys.** If you pick a combination Obsidian
   already uses, the note opens instead. Combinations with Ctrl+Shift or Ctrl+Alt rarely clash.
   Two shortcuts can't share a combination: setting it on one removes it from the other.
+- **Note suggestions** read the list of file paths in your vault, only while you type in a
+  shortcut's note box, to show matching notes. Nothing is read from inside the notes and nothing
+  leaves your computer.
 - **Buttons** are removed through an internal Obsidian method (`removeRibbonAction`, the one
   Obsidian uses when a plugin is turned off), because the public API has no way to remove a
   single ribbon button.

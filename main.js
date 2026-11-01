@@ -47,7 +47,7 @@ module.exports = class NoteShortcutButtonPlugin extends Plugin {
 	async onload() {
 		const saved = await this.loadData();
 		this.settings = Object.assign({}, DEFAULT_SETTINGS, saved);
-		// First run: start with a shortcut to a TODO note if the vault has one
+		// First run: start with a shortcut to a note named TODO if the vault has one
 		if (!saved) this.app.workspace.onLayoutReady(() => this.addDefaultShortcut());
 		this.ribbonEls = [];
 		this.capturingHotkey = false;
@@ -65,7 +65,8 @@ module.exports = class NoteShortcutButtonPlugin extends Plugin {
 	}
 
 	async addDefaultShortcut() {
-		const todo = this.app.vault.getMarkdownFiles().find((f) => /todo/i.test(f.basename));
+		// Resolved like a [[TODO]] link, so no need to list the vault's files
+		const todo = this.app.metadataCache.getFirstLinkpathDest("TODO", "");
 		if (!todo) return;
 		this.settings.shortcuts.push({ link: todo.path.replace(/\.md$/, ""), icon: "list-todo", hotkey: "" });
 		await this.saveSettings({ refreshTab: true });
