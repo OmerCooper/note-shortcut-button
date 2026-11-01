@@ -1,0 +1,16 @@
+.nscb-icon-preview {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.nscb-hotkey-button {
+	min-width: 110px;
+	font-family: var(--font-monospace);
+}
+
+.nscb-icon-suggestion {
+	display: flex;
+	align-items: center;
+}
