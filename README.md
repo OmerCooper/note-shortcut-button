@@ -6,8 +6,8 @@ optionally, its own keyboard shortcut.
 
 ![Clicking a TODO button in the left panel, adding a Reading list shortcut in the settings with a book icon and Ctrl+Shift+R, then opening it with the new button and with the shortcut](docs/demo.gif)
 
-> This plugin was created by AI ([Claude Code](https://claude.com/claude-code)), directed and
-> tested by Omer Cooper.
+> This plugin was vibecoded: all of its code and this README were written by AI
+> ([Claude Code](https://claude.com/claude-code)), directed and tested by Omer Cooper.
 
 ## Using it
 
