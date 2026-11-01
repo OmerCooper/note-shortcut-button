@@ -1,7 +1,7 @@
 {
 	"id": "note-shortcut-button",
 	"name": "Note Shortcut Button",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "1.4.10",
 	"description": "Add left-panel buttons that open chosen notes, each with its own icon and optional keyboard shortcut.",
 	"author": "Omer Cooper",
